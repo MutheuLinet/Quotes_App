@@ -1,27 +1,41 @@
-# Quotes
+# Quotes Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Author
 
-## Development server
+Linet Mutheu
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Description
 
-## Code scaffolding
+This weeks project is to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. A user I will be able to create a new quote, upvote or downvote a quote, delete a quote and see the number of upvotes and number of downvotes for each quote.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisities
 
-## Build
+You need to have git installed and a web browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Setup
 
-## Running unit tests
+To access this project on your local files, you can clone it using these steps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Open your terminal
+2. Use this command to clone `$ git clone
+   https://github.com/MutheuLinet/Quotes_App.git
+3. This will clone the repository into your local folder
+4. **Enjoy :)**
 
-## Running end-to-end tests
+### Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. HTML
+2. CSS
+3. BOOTSTRAP
+4. GIT
+5. JAVASCRIPT
+6. TYPESCRIPT
+7. ANGULAR
 
-## Further help
+### Live Site
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Live Link](https://mutheulinet.github.io/Quotes_App/)
+
+### License
+
+This project is under the [MIT](LICENSE) licence
