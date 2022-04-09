@@ -3,15 +3,21 @@
   Date Created: {{ quote.completeDate | date | uppercase }}
   <span>(This quote was made {{ quote.completeDate | dateCount }} ago)</span>
 </p>
-
-<button (click)="upVote(true)" id="upvote">Upvote</button>
-{{ quote.upVote }}
-<br /><br />
-
-<button (click)="downVote(true)" id="dvote">Downvote</button>
-{{ quote.downVote }}
-<br /><br />
-
-<button (click)="quoteDelete(true)" class="btn btn-outline-danger">
-  Delete Quote
+<button
+  (click)="upVote(true)"
+  id="upvote"
+  class="btn btn-primary"
+  style="margin-right: 1%"
+>
+  {{ quote.upVote }} Upvotes
 </button>
+
+<span>
+  <button (click)="downVote(true)" id="dvote" class="btn btn-success">
+    {{ quote.downVote }} Downvotes
+  </button>
+</span>
+
+<br /><br />
+
+<button (click)="quoteDelete(true)" class="btn btn-danger">Delete Quote</button>
