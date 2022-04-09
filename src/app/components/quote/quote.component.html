@@ -1,1 +1,21 @@
-<p>quote works!</p>
+<div *ngFor="let quote of quotes; let i = index">
+  <div>
+    <h4>{{ quote.quote }}</h4>
+    <h4>-{{ quote.quoteAuthor }}</h4>
+    <!-- <button (click)="toggleDetails(i)" class="btn btn-primary">
+      Toggle Details
+    </button> -->
+    <!-- <app-quote-description
+      *ngIf="quote.showDescription"
+      [quote]="quote"
+    ></app-quote-description> -->
+  </div>
+
+  <!-- <div *ngIf="quote.showDescription">
+    <app-quote-description
+      [quote]="quote"
+      (isComplete)="deleteQuote($event, i)"
+    >
+    </app-quote-description>
+  </div> -->
+</div>
