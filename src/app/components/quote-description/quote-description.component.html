@@ -1,15 +1,17 @@
-<p>Created on {{ quote.completeDate | date | uppercase }}</p>
-<p>Submitted by: {{ quote.submittedBy }}</p>
-<!-- <p>This goal will be complete in {{ quote.completeDate | dateCount }} days</p> -->
+<p>Submitted By: {{ quote.submittedBy }}</p>
+<p>
+  Date Created: {{ quote.completeDate | date | uppercase }}
+  <span>(This quote was made {{ quote.completeDate | dateCount }} ago)</span>
+</p>
 
-<button>Upvote</button>
-display no of votes
+<button (click)="upVote(true)" id="upvote">Upvote</button>
+{{ quote.upVote }}
 <br /><br />
 
-<button>Downvote</button>
-display no of votes
+<button (click)="downVote(true)" id="dvote">Downvote</button>
+{{ quote.downVote }}
 <br /><br />
 
 <button (click)="quoteDelete(true)" class="btn btn-outline-danger">
-  Delete Goal
+  Delete Quote
 </button>

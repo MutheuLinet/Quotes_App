@@ -15,7 +15,10 @@
     <app-quote-description
       [quote]="quote"
       (isComplete)="deleteQuote($event, i)"
+      (isUpVote)="upVote($event, i)"
+      (isDownVote)="downVote($event, i)"
     >
+      >
     </app-quote-description>
   </div>
 </div>
