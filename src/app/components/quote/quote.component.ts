@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Quote } from 'src/app/class/quote';
 
 @Component({
@@ -54,6 +55,13 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index, 1)
       }
     }
+  }
+
+  addNewQuote(quote:any){
+    let quotelength = this.quotes.length;
+    quote.id =quotelength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
   }
 
   constructor() { }
