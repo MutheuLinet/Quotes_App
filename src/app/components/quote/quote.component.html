@@ -1,24 +1,33 @@
-<div *ngFor="let quote of quotes; let i = index">
-  <div>
-    <h4>{{ quote.quote }}</h4>
-    <h4>-{{ quote.quoteAuthor }}</h4>
-    <button (click)="toggleDetails(i)" class="btn btn-primary">
-      Toggle Details
-    </button>
-    <!-- <app-quote-description
-      *ngIf="quote.showDescription"
-      [quote]="quote"
-    ></app-quote-description> -->
-  </div>
-
-  <div *ngIf="quote.showDescription">
-    <app-quote-description
-      [quote]="quote"
-      (isComplete)="deleteQuote($event, i)"
-      (isUpVote)="upVote($event, i)"
-      (isDownVote)="downVote($event, i)"
-    >
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div
+        class="alert alert-secondary"
+        *ngFor="let quote of quotes; let i = index"
       >
-    </app-quote-description>
+        <div>
+          <h4>{{ quote.quote }}</h4>
+          <h5>-{{ quote.quoteAuthor }}</h5>
+          <button (click)="toggleDetails(i)" class="btn btn-warning">
+            Quote Details
+          </button>
+          <br />
+        </div>
+
+        <div *ngIf="quote.showDescription">
+          <app-quote-description
+            [quote]="quote"
+            (isComplete)="deleteQuote($event, i)"
+            (isUpVote)="upVote($event, i)"
+            (isDownVote)="downVote($event, i)"
+          >
+            >
+          </app-quote-description>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <app-form (addQuote)="addNewQuote($event)"> </app-form>
+    </div>
   </div>
 </div>
