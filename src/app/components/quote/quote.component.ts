@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { Quote } from 'src/app/class/quote';
 
 @Component({
@@ -10,17 +9,19 @@ import { Quote } from 'src/app/class/quote';
 export class QuoteComponent implements OnInit {
   
   quotes: Quote[] = [
-    new Quote(1, 'The journey of a thousand miles begins with one step.', 'Lao Tzu', 'Lyn Mutheu', new Date(2019,9,14),0 , 0,false),
-    new Quote(2,'That which does not kill us makes us stronger.','Friedrich Nietzsche','Lyn Mutheu',new Date(2019,6,9),0 , 0,false),
-    new Quote(3,'You must be the change you wish to see in the world.','Mahatma Gandhi','Lyn Mutheu',new Date(2019,1,12),0 , 0,false),
-    new Quote(4,'Sometimes my genious is almost frightening.','Samwel Chege','Lyn Mutheu',new Date(2019,11,18),0 , 0,false),
-    new Quote(5,'Those who dare to fail miserably can achieve greatly.','Lyn Mutheu','Lyn Mutheu', new Date(2019,2,14),0 , 0,false),
+    new Quote(1, 'Grit, determination, the right amount of crazy, self belief - everything it takes to be a champion. I have that.', 'Dustin Poirier', 'Linet', new Date(2019,9,14),0 , 0,false),
+    new Quote(2,'Find something you are passionate about and keep tremendously interested in it.','Julia Child','Jesse',new Date(2019,6,9),0 , 0,false),
+    new Quote(3,'You must be the change you wish to see in the world.','Mahatma Gandhi','Anyango',new Date(2019,1,12),0 , 0,false),
+    new Quote(4,'It is very easy to forgive others their mistakes; it takes more grit and gumption to forgive them for having witnessed your own.','Jessamyn West','Samwel',new Date(2019,11,18),0 , 0,false),
+    new Quote(5,'Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.','Bruce Lee','Stacy', new Date(2019,2,14),0 , 0,false),
   ];
-
+  
+    
   toggleDetails(index: number){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }  
-    upVote(isUpVote:any, index:any){
+  
+  upVote(isUpVote:any, index:any){
       
       this.quotes[index].upVote++
       this.inspirationalQuote();
