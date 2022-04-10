@@ -73,5 +73,11 @@
     </div>
   </div>
   <br />
-  <button type="submit" class="btn btn-outline-danger">Add Quote</button>
+  <button
+    [disabled]="!quoteForm.valid"
+    type="submit"
+    class="btn btn-outline-danger"
+  >
+    Add Quote
+  </button>
 </form>
