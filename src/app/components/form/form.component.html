@@ -1,6 +1,8 @@
 <form autocomplete="off" (ngSubmit)="submitQuote()" #quoteForm="ngForm">
   <div class="form-group">
-    <label class="text-info" for="quote">New Quote</label>
+    <label style="font-size: larger" class="text-success" for="quote"
+      >New Quote</label
+    >
     <textarea
       class="form-control"
       id="quote"
@@ -16,7 +18,9 @@
   </div>
   <br />
   <div class="form-group">
-    <label class="text-info" class="text-info" for="name">Quote Author</label>
+    <label style="font-size: larger" class="text-success" for="author"
+      >Quote Author</label
+    >
     <input
       type="text"
       class="form-control"
@@ -32,7 +36,9 @@
   </div>
   <br />
   <div class="form-group">
-    <label class="text-info" for="name">Submitted By</label>
+    <label style="font-size: larger" class="text-success" for="submittedBy"
+      >Submitted By</label
+    >
     <input
       type="text"
       class="form-control"
@@ -48,10 +54,12 @@
   </div>
   <br />
   <div class="form-group">
-    <label class="text-info" for="date">Date Created</label>
+    <label style="font-size: larger" class="text-success" for="date"
+      >Date Created</label
+    >
     <br />
     <input
-      class="form-control datepicker text-info"
+      class="form-control datepicker text-success"
       data-date-format="mm/dd/yyyy"
       type="date"
       id="date"
