@@ -6,11 +6,11 @@ Linet Mutheu
 
 ### Description
 
-This weeks project is to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. A user I will be able to create a new quote, upvote or downvote a quote, delete a quote and see the number of upvotes and number of downvotes for each quote.
+This is an application where users can create quotes and have those quotes voted on whether they are terrible advice or are inspirational. A user I will be able to create a new quote, upvote or downvote a quote, delete a quote and see the number of upvotes and number of downvotes for each quote. The quote with the highest upvotes gets highlighted.
 
 ### Prerequisities
 
-You need to have git installed and a web browser.
+You need to have git installed, an angular CLI functioning, and a web browser.
 
 ### Setup
 
